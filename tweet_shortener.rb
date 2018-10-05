@@ -19,7 +19,7 @@ end
 def word_substituter(tweet_string)
   tweet_array = []
   tweet_string.split(" ").collect do |word|
-    if dictionary.keys.include?(word) || dictionary.keys.capitalize.include?(word)
+    if dictionary.keys.include?(word)
       tweet_array << dictionary[word]
     else
       tweet_array << word
